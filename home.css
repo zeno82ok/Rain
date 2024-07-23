@@ -1,0 +1,148 @@
+/*body{
+    background-image: url(background.jpg); 
+    background-size: cover;
+    background-clip: url(background.jpg); 
+}*/
+
+.video-background {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+    
+#logo{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-family:sans-serif;
+}
+#nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+/*NAVBAR BG COLOR BLACK*/
+#list{
+    background-color: rgb(0, 0, 0);
+
+}
+/* LIST ITEM SETS*/
+li{
+    display: inline-block;
+    padding: 10px;
+}
+/*NAVBAR LIST ITEMS*/
+.head{
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Raleway;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+/*NAVBAR HOVER EFFECTS*/
+.head:hover{
+    border-radius: 3px;
+    font-size: 35px;
+    background: transparent;
+    box-shadow: 0 0 20px 5px #a4fffdea;
+}
+/*QUESTIONS HEADING (WHAT IS RAIN? / HOW CLOUDS FORMED?*/
+.heading{
+    color: #ffffff;
+    font-size: 80px;
+    font-family: arial narrow bold;
+}
+/*WHAT IS RAIN? (PARAGRAPH) */
+.para{
+    color: rgba(221, 255, 252, 0.847);
+    font-size: 40px;
+    text-shadow: 2px 2px 0 black;
+}
+/*EVENTS & IMPECTS HOVER EFFECTS*/
+.img:hover{
+    background: transparent;
+    box-shadow: 0 0 20px 5px #a4fffdea;
+}
+/*ADVANTAGE & DISADVANTAGE (HEADING)*/
+.heading2{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: arial narrow bold;
+    text-decoration: underline rgba(221, 255, 252, 0.847);
+}
+/*ADVANTAGE & DISADVANTAGE (PARAGRAPH)*/
+#stage{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgba(221, 255, 252, 0.847);
+    text-shadow: 2px 2px 0 black;
+}
+/* ANIMATION TEXT FOR PARAGRAPH */
+.type {
+    font-size: 40px; 
+    color:#0000;
+     background:
+      linear-gradient(-90deg,#a5f4ff 5px,#0000 0) 10px 0,
+      linear-gradient(#a5f4ff 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;    
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+      b .7s infinite steps(1),   
+      t calc(var(--n)*60ms) steps(var(--n)) forwards;
+  }
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
+footer{
+ background-color: black;
+ padding-bottom: 45px;
+}
+#foot1{
+    font-size: 25px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 10px;
+}
+#foot2{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(139, 139, 139);
+}
+#links{
+    text-align: center;
+}
