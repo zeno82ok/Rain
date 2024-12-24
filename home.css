@@ -1,8 +1,9 @@
-/*body{
-    background-image: url(background.jpg); 
+/* General Styles */
+body {
+    background-image: url(background.jpg);
     background-size: cover;
-    background-clip: url(background.jpg); 
-}*/
+    background-clip: url(background.jpg);
+}
 
 .video-background {
     position: relative;
@@ -29,6 +30,7 @@
     color: white;
     font-family: Arial, sans-serif;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
@@ -38,111 +40,170 @@ h1 {
 p {
     font-size: 1.5em;
 }
-    
-#logo{
+
+#logo {
     font-size: 40px;
     color: rgb(255, 255, 255);
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
-#nav{
+
+/* Navbar Styles */
+#nav {
     background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 0px;
 }
-/*NAVBAR BG COLOR BLACK*/
-#list{
-    background-color: rgb(0, 0, 0);
 
+#list {
+    background-color: rgb(0, 0, 0);
 }
-/* LIST ITEM SETS*/
-li{
+
+li {
     display: inline-block;
     padding: 10px;
 }
-/*NAVBAR LIST ITEMS*/
-.head{
+
+.head {
     font-size: 30px;
     text-decoration: none;
     font-family: Raleway;
     margin-bottom: 0px;
     color: #ffffff;
 }
-/*NAVBAR HOVER EFFECTS*/
-.head:hover{
+
+.head:hover {
     border-radius: 3px;
     font-size: 35px;
     background: transparent;
     box-shadow: 0 0 20px 5px #a4fffdea;
 }
-/*QUESTIONS HEADING (WHAT IS RAIN? / HOW CLOUDS FORMED?*/
-.heading{
+
+/* Section Headings */
+.heading {
     color: #ffffff;
     font-size: 80px;
-    font-family: arial narrow bold;
+    font-family: Arial Narrow Bold;
 }
-/*WHAT IS RAIN? (PARAGRAPH) */
-.para{
+
+.para {
     color: rgba(221, 255, 252, 0.847);
     font-size: 40px;
     text-shadow: 2px 2px 0 black;
 }
-/*EVENTS & IMPECTS HOVER EFFECTS*/
-.img:hover{
+
+.img:hover {
     background: transparent;
     box-shadow: 0 0 20px 5px #a4fffdea;
 }
-/*ADVANTAGE & DISADVANTAGE (HEADING)*/
-.heading2{
+
+.heading2 {
     color: #ffffff;
     font-size: 50px;
-    font-family: arial narrow bold;
+    font-family: Arial Narrow Bold;
     text-decoration: underline rgba(221, 255, 252, 0.847);
 }
-/*ADVANTAGE & DISADVANTAGE (PARAGRAPH)*/
-#stage{
+
+#stage {
     color: white;
     font-size: 20px;
     font-family: sans-serif;
     color: rgba(221, 255, 252, 0.847);
     text-shadow: 2px 2px 0 black;
 }
-/* ANIMATION TEXT FOR PARAGRAPH */
+
+/* Animation Text */
 .type {
-    font-size: 40px; 
-    color:#0000;
-     background:
-      linear-gradient(-90deg,#a5f4ff 5px,#0000 0) 10px 0,
-      linear-gradient(#a5f4ff 0 0) 0 0;
-    background-size:calc(var(--n)*1ch) 200%;
-    -webkit-background-clip:padding-box,text;    
-    background-clip:padding-box,text;
-    background-repeat:no-repeat;
-    animation: 
-      b .7s infinite steps(1),   
-      t calc(var(--n)*60ms) steps(var(--n)) forwards;
-  }
-  @keyframes t{
-    from {background-size:0 200%}
-  }
-  @keyframes b{
-    50% {background-position:0 -100%,0 0}
-  }
-footer{
- background-color: black;
- padding-bottom: 45px;
+    font-size: 40px;
+    color: #0000;
+    background: linear-gradient(-90deg, #a5f4ff 5px, #0000 0) 10px 0, linear-gradient(#a5f4ff 0 0) 0 0;
+    background-size: calc(var(--n)*1ch) 200%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    animation: b 0.7s infinite steps(1), t calc(var(--n)*60ms) steps(var(--n)) forwards;
 }
-#foot1{
+
+@keyframes t {
+    from {
+        background-size: 0 200%;
+    }
+}
+
+@keyframes b {
+    50% {
+        background-position: 0 -100%, 0 0;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    padding-bottom: 45px;
+}
+
+#foot1 {
     font-size: 25px;
     text-align: center;
     margin: 0px;
     padding-top: 10px;
 }
-#foot2{
+
+#foot2 {
     font-size: 20px;
     text-align: center;
     color: rgb(139, 139, 139);
 }
-#links{
+
+#links {
     text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        display: block;
+        padding: 8px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .para {
+        font-size: 25px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .type {
+        font-size: 30px;
+    }
+
+    footer {
+        padding-bottom: 30px;
+    }
+
+    #foot1 {
+        font-size: 20px;
+    }
+
+    #foot2 {
+        font-size: 16px;
+    }
 }
